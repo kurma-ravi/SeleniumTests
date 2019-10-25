@@ -11,12 +11,13 @@ import static org.hamcrest.Matchers.*;
 
 public class WebAppTest {
 	
+/*  TASK-1  */
 	@Test
 	public void loginTest() {
 		WebDriver driver = new HtmlUnitDriver(true);
 		driver.get("http://13.233.124.116:8080/webapp");
-		driver.findElement(By.id("username")).sendKeys("swastik");
-		driver.findElement(By.id("password")).sendKeys("swastik");
+		driver.findElement(By.id("username")).sendKeys("ravi");
+		driver.findElement(By.id("password")).sendKeys("ravi");
 		driver.findElement(By.xpath("//button[text()='Click Me']")).click();
 		Assert.assertEquals(driver.findElement(By.xpath("//font")).getText(), "LOGIN SUCCESSFUL");
 	}
@@ -30,7 +31,8 @@ public class WebAppTest {
 		driver.findElement(By.xpath("//button[text()='Click Me']")).click();
 		Assert.assertEquals(driver.findElement(By.xpath("//font")).getText(), "INVALID CREDENTIALS");
 	}
-	
+
+/*  TASK-2  */
 	@Test
 	public void dogsAPITest() {
 		get("https://dog.ceo/api/breeds/image/random").then().statusCode(200);
