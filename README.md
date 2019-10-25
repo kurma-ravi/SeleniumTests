@@ -1,2 +1,10 @@
 # SeleniumTests
-SeleniumTests
+
+- This is a Selenium test framework built with Maven.
+- The framework code uses TestNG (with annotations)
+- These test scripts can be used to test any webapplication based on its functionality.
+
+Commands to run:
+## mvn clean install
+## mvn test
+
