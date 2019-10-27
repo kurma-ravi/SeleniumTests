@@ -33,7 +33,7 @@ public class WebAppTest {
 	}
 
 /*  TASK-2  */
-	@Test
+/*	@Test
 	public void dogsAPITest() {
 		get("https://dog.ceo/api/breeds/image/random").then().statusCode(200);
 	}
@@ -47,5 +47,5 @@ public class WebAppTest {
 	@Test
 	public void dogListAllBreeds() {
 		get("https://dog.ceo/api/breeds/list/all").then().statusCode(200);	
-	}
+	} */
 }
