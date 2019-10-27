@@ -15,7 +15,7 @@ public class WebAppTest {
 	@Test
 	public void loginTest() {
 		WebDriver driver = new HtmlUnitDriver(true);
-		driver.get("http://13.233.124.116:8080/webapp");
+		driver.get("http://13.127.46.220:8080/webapp");
 		driver.findElement(By.id("username")).sendKeys("ravi");
 		driver.findElement(By.id("password")).sendKeys("ravi");
 		driver.findElement(By.xpath("//button[text()='Click Me']")).click();
@@ -25,7 +25,7 @@ public class WebAppTest {
 	@Test
 	public void invalidLoginTest() {
 		WebDriver driver = new HtmlUnitDriver(true);
-		driver.get("http://13.233.124.116:8080/webapp");
+		driver.get("http://13.127.46.220:8080/webapp");
 		driver.findElement(By.id("username")).sendKeys("swastik");
 		driver.findElement(By.id("password")).sendKeys("ss");
 		driver.findElement(By.xpath("//button[text()='Click Me']")).click();
