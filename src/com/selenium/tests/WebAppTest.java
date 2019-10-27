@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.*;
 public class WebAppTest {
 	
 /*  TASK-1  */
-/*	@Test
+	@Test
 	public void loginTest() {
 		WebDriver driver = new HtmlUnitDriver(true);
 		driver.get("http://13.127.46.220:8080/webapp");
@@ -30,7 +30,7 @@ public class WebAppTest {
 		driver.findElement(By.id("password")).sendKeys("ss");
 		driver.findElement(By.xpath("//button[text()='Click Me']")).click();
 		Assert.assertEquals(driver.findElement(By.xpath("//font")).getText(), "INVALID CREDENTIALS");
-	} */
+	}
 
 /*  TASK-2  */
 	@Test
